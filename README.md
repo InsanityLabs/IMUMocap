@@ -18,12 +18,3 @@ It is very easy to make your own track set as **SlimeVr** uses the same hardware
 
 **Software Not Fully Ready This Section Will Be Updated When A Easier Gui Calibration Method Is Created.**
 
-## How The Server Connects To The TrackSet 
-```mermaid
-graph LR
-A[TrackSet] -- Unity/Unreal Plugin --> B((Plugin Backend))
-A --> C(IMUMocapServer)
-B --> D{Location Drift Correction}
-C --> D
-D --> E{Game Client }
-```
